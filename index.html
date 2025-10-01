@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleteYa - Servicio de Fletes y Mudanzas en Argentina</title>
+    <meta name="description" content="Servicio profesional de fletes y mudanzas. Transporte de mercaderías, electrodomésticos y mudanzas completas en toda la zona de Buenos Aires.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Flatpickr Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="FleteYa Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#budget">Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#booking">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="contact-info">
+                        <a href="https://wa.me/5491112345678" class="whatsapp-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>11-2850-3534</span>
+                        </a>
+                        <a href="tel:+541128503534" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>11-2850-3534</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Servicio de Fletes y Mudanzas Confiable</h1>
+                    <p>Ofrecemos soluciones de transporte profesionales para tus necesidades de mudanza y entrega de mercadería. Servicio rápido, seguro y al mejor precio en toda la zona de Buenos Aires.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#reservaModal">Reservar Ahora</a>
+                        <a href="#budget" class="btn btn-outline-primary btn-lg">Solicitar Presupuesto</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/IMG-20250510-WA0024 (1).jpg" alt="Camioneta de Fletes" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestra Flota</h2>
+            <div class="row gallery-container">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="img/IMG-20250510-WA0010.jpg" alt="Camioneta Utilitaria" class="img-fluid rounded">
+                        <div class="gallery-caption">
+                            <p>Ideal para traslados pequeños y medianos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="img/IMG-20250510-WA0013.jpg" alt="Camión Mediano" class="img-fluid rounded">
+                        <div class="gallery-caption">
+                            <p>Para mudanzas completas y cargas medianas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="img/IMG-20250510-WA0024.jpg" alt="Camión Grande" class="img-fluid rounded">
+                        <div class="gallery-caption">
+                            <p>Para grandes volúmenes y mudanzas completas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon mb-3">
+                                <svg class="icon">
+                                    <use xlink:href="img/icons.svg#icon-truck"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Fletes Urbanos</h4>
+                            <p class="card-text">Servicio de transporte de mercadería dentro de la ciudad y alrededores. Ideal para entregas rápidas y eficientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon mb-3">
+                                <svg class="icon">
+                                    <use xlink:href="img/icons.svg#icon-truck"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Mudanzas Completas</h4>
+                            <p class="card-text">Servicio integral de mudanzas que incluye embalaje, carga, transporte, descarga y ubicación de sus pertenencias.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon mb-3">
+                                <svg class="icon">
+                                    <use xlink:href="img/icons.svg#icon-truck"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Transporte de Mercadería</h4>
+                            <p class="card-text">Servicio especializado para empresas que necesitan transportar productos, materiales o equipamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Calculadora de Presupuesto -->
+    <section id="calculadora" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Calculadora de Presupuesto</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form id="budget-form">
+                                <div class="mb-3">
+                                    <label for="origin" class="form-label">Dirección de Origen</label>
+                                    <input type="text" class="form-control" id="origin" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="destination" class="form-label">Dirección de Destino</label>
+                                    <input type="text" class="form-control" id="destination" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service-type" class="form-label">Tipo de Servicio</label>
+                                    <select class="form-select" id="service-type" required>
+                                        <option value="">Seleccionar...</option>
+                                        <option value="flete">Flete Simple</option>
+                                        <option value="mudanza">Mudanza Completa</option>
+                                        <option value="mercaderia">Transporte de Mercadería</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="items" class="form-label">Descripción de Items</label>
+                                    <textarea class="form-control" id="items" rows="3" placeholder="Describa los muebles o artículos a transportar"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="photo" class="form-label">Adjuntar Foto (opcional)</label>
+                                    <input type="file" class="form-control" id="photo">
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Calcular Presupuesto</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Zona de Cobertura -->
+    <section id="cobertura" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Cobertura Nacional</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="coverage-map">
+                        <img src="img/mapa_argentina.webp" alt="Mapa de Argentina" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="coverage-info mt-4">
+                        <h4 class="text-center mb-3">Servicio en Todo el País</h4>
+                        <p class="text-center">Realizamos viajes a todas las provincias de Argentina, ofreciendo servicios de fletes y mudanzas con la misma calidad y profesionalismo en cualquier punto del territorio nacional.</p>
+                        <div class="row text-center mt-4">
+                            <div class="col-md-4 mb-3">
+                                <div class="coverage-area">
+                                    <h5>Zona Metropolitana</h5>
+                                    <p>Servicio express y mismo día</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="coverage-area">
+                                    <h5>Provincias Limítrofes</h5>
+                                    <p>Entrega en 24-48 horas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="coverage-area">
+                                    <h5>Todo el País</h5>
+                                    <p>Coordinación según distancia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Reservas -->
+    <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservaModalLabel">Reserva tu Servicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="alert alert-info">
+                                <p><strong>¿Prefieres reservar por WhatsApp?</strong> Puedes contactarnos directamente al <a href="https://wa.me/5491155826806" target="_blank" class="alert-link">+54 9 11 5582-6806</a> para coordinar tu servicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="booking-form">
+                        <div class="mb-3">
+                            <label for="booking-name" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="booking-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="booking-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="booking-phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-date" class="form-label">Fecha del Servicio</label>
+                            <input type="text" class="form-control" id="booking-date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-service" class="form-label">Tipo de Servicio</label>
+                            <select class="form-select" id="booking-service" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="flete">Flete Simple</option>
+                                <option value="mudanza">Mudanza Completa</option>
+                                <option value="mercaderia">Transporte de Mercadería</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="booking-notes" class="form-label">Notas Adicionales</label>
+                            <textarea class="form-control" id="booking-notes" rows="3"></textarea>
+                        </div>
+                        <input type="hidden" id="booking-email-to" value="mateo.silvero.t1vl@gmail.com">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="submit-booking">Enviar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Testimonios de Clientes</h2>
+            <p class="section-description">Lo que nuestros clientes dicen sobre nuestro servicio</p>
+            
+            <!-- Contenido de testimonios se agregará después -->
+            <p class="text-center">Opiniones de clientes satisfechos</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Información de Contacto</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Av. Corrientes 1234, CABA</p>
+                        <p><i class="fas fa-phone me-2"></i> (011) 4567-8900</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@fleteya.com.ar</p>
+                        <p><i class="fas fa-clock me-2"></i> Lunes a Sábados: 8:00 - 20:00</p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form id="contact-form">
+                                <div class="mb-3">
+                                    <label for="contact-name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="contact-name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="contact-email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-subject" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="contact-subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="contact-message" rows="4" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">FleteYa</h5>
+                    <p>Ofrecemos servicios de fletes, mudanzas y transporte de mercadería con la mejor calidad y atención al cliente.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#calculadora">Presupuesto</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Boletín Informativo</h5>
+                    <p>Suscríbete para recibir nuestras ofertas y novedades.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                            <button class="btn btn-primary" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 FleteYa. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5491155826806" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
