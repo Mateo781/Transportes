@@ -8,7 +8,7 @@
     <path class="primary" d="M30,10 L45,10 L55,30 L45,50 L30,50 L20,30 Z" />
     <path class="secondary" d="M32,15 L43,15 L50,30 L43,45 L32,45 L25,30 Z" />
     <path class="primary" d="M35,20 L40,20 L45,30 L40,40 L35,40 L30,30 Z" />
-    <text x="65" y="35" class="logo-text secondary" font-size="24">FleteYa</text>
+    <text x="65" y="35" class="logo-text secondary" font-size="24">Fletes Favio</text>
     <text x="65" y="48" class="logo-text primary" font-size="10">FLETES Y MUDANZAS</text>
   </g>
 </svg>
